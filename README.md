@@ -59,14 +59,14 @@ You have to login first to use the service.
 curl -F 'username=nbyis' -F 'password=hshach' -X POST http://127.0.0.1:5000/login
 ```
 
-2. list all the posts
+2. list all the posts<br />
 Example
 ```
 curl -X GET http://127.0.0.1:5000/list 
 
 ```
 
-3. search post
+3. search post<br />
 Example: search by username
 ```
 curl -F 'username=nbyis' -X POST http://127.0.0.1:5000/search
@@ -77,15 +77,15 @@ Example: search by post_id
 curl -F 'post_id=1' -X POST http://127.0.0.1:5000/search
 ```
 
-4. update post
-Permission required.
+4. update post<br />
+Permission required.<br />
 Example
 ```
 curl -F 'post_id=1' -F 'content=abcdefghijk' -X POST http://127.0.0.1:5000/update
 ```
 
-5. delete post
-Permission required.
+5. delete post<br />
+Permission required.<br />
 Example
 ```
 curl -F 'post_id=1' -X POST http://127.0.0.1:5000/delete
